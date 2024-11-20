@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import Navbar from "../components/Navbar";
 import axios from "axios";
 
+
 const ContactForm = () => {
   const [formData, setFormData] = useState({
     name: "",
@@ -18,14 +19,20 @@ const ContactForm = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    console.log(formData);
-
+  
+    const dataToSend = { ...formData };
+  
     try {
-      // Send the form data to the backend
-      const response = await axios.post("http://localhost:3000/contact", formData);
-      console.log("Response from server:", response.data);
-
-      // Reset form fields to empty strings
+      const response = await axios.post(
+        import.meta.env.VITE_BACKEND_URL,
+        dataToSend,
+        {
+          headers: {
+            "Content-Type": "application/json",
+          },
+        }
+      );
+  
       setFormData({
         name: "",
         email: "",
@@ -33,11 +40,14 @@ const ContactForm = () => {
         subject: "",
         message: "",
       });
+  
+      alert("Form submitted successfully!");
     } catch (error) {
-      console.error("Error sending form data:", error);
+      alert("Failed to submit the form. Please try again later.");
+      console.error("Error submitting form: ", error);
     }
   };
-
+  
   return (
     <>
       <Navbar />
