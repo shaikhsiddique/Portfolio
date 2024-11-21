@@ -10,7 +10,6 @@ function Navbar() {
 
   const toggleNav = () => {
     setShowNav((prev) => !prev);
-    console.log("fired");
   };
 
   useEffect(() => {
