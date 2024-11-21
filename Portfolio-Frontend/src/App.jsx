@@ -1,26 +1,27 @@
+// App.jsx
 import React from 'react';
-import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import CustomToastContainer from './components/ToastContainer';
 import Home from './pages/Home';
-
+import Work from './pages/Work';
 import Contact from './pages/Contact';
 import About from './pages/About';
-import  Work  from './pages/Work';
-import Frontend_Project from './pages/Projects/Frontend-Project'
-import Full_Stack_Project from './pages/Projects/Full-Stack-Project';
-import Mobile_Project from './pages/Projects/Mobile-Project';
-
+import FrontendProject from './pages/Projects/Frontend-Project';
+import FullStackProject from './pages/Projects/Full-Stack-Project';
+import MobileProject from './pages/Projects/Mobile-Project';
 
 function App() {
   return (
     <Router>
+      <CustomToastContainer />
       <Routes>
-        <Route  path='/' element={<Home/>}/>
-        <Route path='/work' element={<Work/>}/>
-        <Route path='/contact' element={<Contact/>}/>
-        <Route path='/about' element={<About/>}/>
-        <Route path='/frontend-project' element={<Frontend_Project/>}/>
-        <Route path='/full-stack-project' element={<Full_Stack_Project/>}/>
-        <Route path='/mobile-project' element={<Mobile_Project/>}/>
+        <Route path="/" element={<Home />} />
+        <Route path="/work" element={<Work />} />
+        <Route path="/contact" element={<Contact />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/frontend-project" element={<FrontendProject />} />
+        <Route path="/full-stack-project" element={<FullStackProject />} />
+        <Route path="/mobile-project" element={<MobileProject />} />
       </Routes>
     </Router>
   );

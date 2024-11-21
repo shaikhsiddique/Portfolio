@@ -1,15 +1,16 @@
-import React, { useState } from "react";
-import Navbar from "../components/Navbar";
-import axios from "axios";
-
+// Contact.jsx
+import React, { useState } from 'react';
+import Navbar from '../components/Navbar';
+import axios from 'axios';
+import { toast } from 'react-toastify';
 
 const ContactForm = () => {
   const [formData, setFormData] = useState({
-    name: "",
-    email: "",
-    phone: "",
-    subject: "",
-    message: "",
+    name: '',
+    email: '',
+    phone: '',
+    subject: '',
+    message: '',
   });
 
   const handleChange = (e) => {
@@ -19,35 +20,34 @@ const ContactForm = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-  
     const dataToSend = { ...formData };
-  
+
     try {
       const response = await axios.post(
         import.meta.env.VITE_BACKEND_URL,
         dataToSend,
         {
           headers: {
-            "Content-Type": "application/json",
+            'Content-Type': 'application/json',
           },
         }
       );
-  
+
       setFormData({
-        name: "",
-        email: "",
-        phone: "",
-        subject: "",
-        message: "",
+        name: '',
+        email: '',
+        phone: '',
+        subject: '',
+        message: '',
       });
-  
-      alert("Form submitted successfully!");
+
+      toast.success('submitted successfully! 🎉');
     } catch (error) {
-      alert("Failed to submit the form. Please try again later.");
-      console.error("Error submitting form: ", error);
+      toast.error('Failed to submit . Please try again later. 😢');
+      console.error('Error submitting form:', error);
     }
   };
-  
+
   return (
     <div className="overflow-x-hidden">
       <Navbar />
