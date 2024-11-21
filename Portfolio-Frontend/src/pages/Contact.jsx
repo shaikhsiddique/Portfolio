@@ -49,7 +49,7 @@ const ContactForm = () => {
   };
   
   return (
-    <>
+    <div className="overflow-x-hidden">
       <Navbar />
       <div className="h-full w-screen flex items-center justify-center p-4">
         <form
@@ -131,7 +131,7 @@ const ContactForm = () => {
           </button>
         </form>
       </div>
-    </>
+    </div>
   );
 };
 
