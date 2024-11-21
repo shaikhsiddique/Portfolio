@@ -9,24 +9,38 @@ function About() {
       <Navbar />
       <div className="flex  h-full px-6 md:px-16">
         {/* Content Section */}
-        <div className="data md:w-1/2 h-56 absolute top-80 left-32 bg-black text-[#bad3ef] p-6 rounded-lg shadow-lg space-y-4">
-          <h1 className="text-2xl font-bold">About Me</h1>
-          <p className="text-lg leading-relaxed">
+        <div className="data md:w-1/2 md:h-56  absolute md:top-80 top-40 md:left-32 left-0 mx-6  bg-black text-[#bad3ef] p-6 rounded-lg shadow-lg space-y-4">
+          <motion.h1 
+          initial={{ opacity: 0,y:-200 }}
+          animate={{ opacity: 1,y:0 }}
+          transition={{
+            duration: 1,
+            delay:1
+          }}
+          className="text-2xl font-bold text-center">About Me</motion.h1>
+          <motion.p
+            initial={{ opacity: 0,y:-200 }}
+            animate={{ opacity: 1,y:0 }}
+            transition={{
+              duration: 1,
+              delay:2
+            }}
+            className="text-lg leading-relaxed">
             Hi! I'm a web developer with a solid foundation in frontend and
             backend development. Currently, I'm completing my diploma in
             Computer Science. I have experience building scalable, user-friendly
             applications with technologies like React, Node.js, Express,
             MongoDB, and Tailwind CSS.
-          </p>
+          </motion.p>
         </div>
 
         {/* Picture Section */}
-        <div className="picture w-full h-screen  absolute  right-0 flex justify-center mt-6 md:mt-0">
+        <div className="picture w-full h-screen  absolute hidden sm:block  right-0 flex justify-center mt-6 md:mt-0">
           <Boy />
         </div>
       </div>
 
-      <div className="about-page absolute w-full p-6 grid grid-cols-1 md:grid-cols-3 gap-4 justify-center items-start">
+      <div className="about-page absolute top-[97%]  w-full p-6 grid grid-cols-1 md:grid-cols-3 gap-4 justify-center items-start">
         {/* Skills Section */}
         <div className="w-full  bg-black text-[#bad3ef] p-6 rounded-lg shadow-lg">
           <h3 className="text-3xl text-white font-medium mb-4 text-center">
@@ -74,7 +88,7 @@ function About() {
           </ul>
         </div>
       </div>
-      <div className="hero3 absolute top-[180%] w-full flex flex-col items-center justify-center gap-5 py-10">
+      <div className="hero3 absolute sm:top-[155%] top-[260%] w-full flex flex-col items-center justify-center gap-5 py-10">
         {/* Education Section */}
         <div className="w-[96vw] bg-black text-[#bad3ef] p-6 rounded-lg shadow-lg md:col-span-2">
           <h3 className="text-3xl text-white font-medium mb-4 text-center">
