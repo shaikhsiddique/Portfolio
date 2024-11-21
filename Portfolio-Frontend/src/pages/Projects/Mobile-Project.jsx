@@ -16,16 +16,16 @@ function Mobile_Project() {
         animate={{ opacity: 1 }}
         transition={{
           duration: 1,
-          delay: 2,
+          delay: 1,
         }}
-        className="absolute top-28 md:top-64 right-50 md:right-32 w-[380px] md:w-[50%] bg-black text-[#bad3ef] p-8 rounded-lg shadow-lg"
+        className="absolute top-14 md:top-64 right-50 md:right-32 w-[380px] md:w-[50%] bg-black text-[#bad3ef] p-8 rounded-lg shadow-lg"
       >
         <motion.h1
           initial={{ y: 50, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
           transition={{
             duration: 0.5,
-            delay: 2.5,
+            delay: 1.5,
           }}
           className="text-4xl font-medium text-center mb-4 text-white"
         >
@@ -36,7 +36,7 @@ function Mobile_Project() {
           animate={{ y: 0, opacity: 1 }}
           transition={{
             duration: 0.5,
-            delay: 3,
+            delay: 2,
           }}
           className="text-lg text-center"
         >
@@ -47,7 +47,12 @@ function Mobile_Project() {
         </motion.p>
       </motion.div>
 
-      <div className="sect-2 absolute top-[70%] sm:top-[110%] flex flex-wrap md:flex-nowrap justify-evenly items-center gap-4">
+      <motion.div initial={{opacity: 0 }}
+          animate={{opacity: 1 }}
+          transition={{
+            duration: 0.2,
+            delay: 2.5,
+          }} className="sect-2 absolute top-[60%] sm:top-[110%] flex flex-wrap md:flex-nowrap justify-evenly items-center gap-4">
         {/* Innovation and Design Section */}
         <div className="w-full max-w-[380px] md:w-[30%] bg-black text-[#bad3ef] p-6 rounded-lg shadow-lg">
           <h3 className="text-3xl text-white font-medium mb-2 text-center">
@@ -83,9 +88,14 @@ function Mobile_Project() {
             functional.
           </p>
         </div>
-      </div>
+      </motion.div>
 
-      <div className="projects-list absolute top-[160%] w-full px-4 sm:px-8 lg:px-10 py-6 text-[#bad3ef] space-y-4 pb-12">
+      <motion.div initial={{ opacity: 0 }}
+          animate={{opacity: 1 }}
+          transition={{
+            duration:0.2,
+            delay: 3,
+          }} className="projects-list absolute top-[170%] w-full px-4 sm:px-8 lg:px-10 py-6 text-[#bad3ef] space-y-4 pb-12">
         <h1 className="text-4xl font-semibold text-black text-center mb-4">
           Explore My Android Projects
         </h1>
@@ -145,7 +155,7 @@ function Mobile_Project() {
             </a>
           </div>
         </div>
-      </div>
+      </motion.div>
     </div>
   );
 }
