@@ -57,7 +57,7 @@ const ContactForm = () => {
           className="form-container bg-black border border-gray-700 shadow-lg rounded-lg p-4 w-full max-w-md flex flex-col space-y-4"
         >
           <h2 className="text-lg font-semibold text-center text-[#bad3ef] mb-4">
-            Contact Me
+            Message Me
           </h2>
 
           <label className="flex flex-col text-[#bad3ef]">
