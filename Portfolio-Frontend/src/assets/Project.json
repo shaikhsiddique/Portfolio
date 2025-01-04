@@ -1,0 +1,50 @@
+[
+  {
+    "title": "PassOP",
+    "description": "Password Manager A basic React app for managing passwords,securely stored in local storage with options for adding, viewing, and managing",
+    "github": "https://github.com/shaikhsiddique/PassOP",
+    "liveDemo": "https://pass-op-black.vercel.app/"
+  },
+  {
+    "title": "TaskHub",
+    "description": "TaskHub uses React hooks (`useState`, `useEffect`) with `localStorage` for data persistence, ensuring a seamless user experience, and Tailwind CSS for a sleek, responsive UI.",
+    "github": "https://github.com/shaikhsiddique/ems",
+    "liveDemo": "https://task-hub-inky.vercel.app/"
+  },
+  {
+    "title": "E-commerce React App Frontend",
+    "description": "A responsive frontend for an e-commerce site, showcasing product displays, cart functionality, and smooth navigation. 🛒",
+    "github": "https://github.com/shaikhsiddique/Ecommerce",
+    "liveDemo": "https://react-ecommerce-mu-fawn.vercel.app/"
+  },
+  {
+    "title": "Rejouice Website",
+    "description": "Frontend for the Rejouice website with GSAP animations, created with HTML, CSS, and JavaScript.",
+    "github": "https://github.com/shaikhsiddique/Rejouice-website",
+    "liveDemo": "https://shaikhsiddique.github.io/Rejouice-website/"
+  },
+  {
+    "title": "thirtySixStudio Website",
+    "description": "Frontend for the thirtySixStudio website with Canvas and GSAP animations, created with HTML, CSS, and JavaScript.",
+    "github": "https://github.com/shaikhsiddique/thirtysixstudio",
+   "liveDemo": "https://thirtysixstudio-hu240hsnf-siddique-shaikhs-projects.vercel.app/"
+  },
+  {
+    "title": "MelodyHub",
+    "description": "MelodyHub 🎵 A simple JavaScript music player with curated playlists and predefined songs.",
+    "github": "https://github.com/shaikhsiddique/MelodyHub",
+    "liveDemo": "https://melody-hub-bice.vercel.app/"
+  },
+  {
+    "title": "Stick-Man Game",
+    "description": "A basic stick-man game with simple gameplay, created using HTML, CSS, and JavaScript.",
+    "github": "https://github.com/shaikhsiddique/stick-man-game",
+    "liveDemo": "https://shaikhsiddique.github.io/stick-man-game/"
+  },
+  {
+    "title": "Karmaveer Bhaurao Patil College Website",
+    "description": "Static clone of KBP Polytechnic website with HTML, CSS, and JavaScript.",
+    "github": "https://github.com/shaikhsiddique/KBP-website",
+   "liveDemo": "https://shaikhsiddique.github.io/KBP-website/"
+  }
+]
