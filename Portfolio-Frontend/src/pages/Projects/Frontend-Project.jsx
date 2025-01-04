@@ -99,7 +99,7 @@ function Frontend_Project() {
 
         {/* Project Cards */}
         <div className="flex flex-wrap justify-evenly gap-4 w-[90%] mx-auto">
-          {Project_Data.map((e, index) => (
+          {Project_Data.frontend.map((e, index) => (
             <div
               key={index}
               className="w-full sm:w-1/2 md:w-1/3 lg:w-1/4 xl:w-1/4"

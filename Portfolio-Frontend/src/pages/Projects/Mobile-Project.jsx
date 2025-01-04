@@ -1,7 +1,8 @@
 import React from "react";
 import MobileContainer from "../../components/3rd/Mobile";
 import { motion } from "framer-motion";
-
+import Project_Data from '../../assets/Project.json';
+import Project_Card from "../../components/Project-Card";
 
 function Mobile_Project() {
   return (
@@ -90,72 +91,22 @@ function Mobile_Project() {
         </div>
       </motion.div>
 
-      <motion.div initial={{ opacity: 0 }}
-          animate={{opacity: 1 }}
-          transition={{
-            duration:0.2,
-            delay: 3,
-          }} className="projects-list absolute top-[170%] w-full px-4 sm:px-8 lg:px-10 py-6 text-[#bad3ef] space-y-4 pb-12">
+      <div className="projects-list absolute top-[170%] w-full px-4 sm:px-8 lg:px-10 py-6 text-[#bad3ef] space-y-4 pb-12">
         <h1 className="text-4xl font-semibold text-black text-center mb-4">
           Explore My Android Projects
         </h1>
-        <div className="project-item w-full bg-[#1f2937] p-4 rounded-md shadow-md border border-gray-700 hover:shadow-lg transition-shadow duration-300 ease-in-out">
-          <h2 className="text-xl lg:text-2xl font-semibold text-white px-2">
-            VehServicing App
-          </h2>
-          <p className="text-sm lg:text-base px-2 mt-1 text-gray-300 leading-snug">
-            The VehServicing app, built with Android Studio, offers an intuitive
-            platform for managing vehicle service appointments and accessing
-            service history. 🚗
-          </p>
-          <div className="flex space-x-3 px-2 mt-2">
-            <a
-              href="https://github.com/shaikhsiddique/VehServicing"
-              className="text-blue-400 hover:text-blue-300 text-sm px-2 py-1 rounded-md border border-blue-400 hover:bg-blue-400 hover:bg-opacity-10 transition-all duration-200 ease-in-out"
+            {/* Project Cards */}
+        <div className="flex flex-wrap justify-evenly gap-4 w-[90%] mx-auto">
+          {Project_Data.android.map((e, index) => (
+            <div
+              key={index}
+              className="w-full sm:w-1/2 md:w-1/3 lg:w-1/4 xl:w-1/4"
             >
-              GitHub
-            </a>
-          </div>
+              <Project_Card index={index} data={e} />
+            </div>
+          ))}
         </div>
-
-        <div className="project-item w-full bg-[#1f2937] p-4 rounded-md shadow-md border border-gray-700 hover:shadow-lg transition-shadow duration-300 ease-in-out">
-          <h2 className="text-xl lg:text-2xl font-semibold text-white px-2">
-            RecipeApp
-          </h2>
-          <p className="text-sm lg:text-base px-2 mt-1 text-gray-300 leading-snug">
-            The RecipeApp allows users to discover and save a variety of
-            delicious recipes added by us, all in an easy-to-navigate interface.
-            🍽️
-          </p>
-          <div className="flex space-x-3 px-2 mt-2">
-            <a
-              href="https://github.com/shaikhsiddique/RecipeApp"
-              className="text-blue-400 hover:text-blue-300 text-sm px-2 py-1 rounded-md border border-blue-400 hover:bg-blue-400 hover:bg-opacity-10 transition-all duration-200 ease-in-out"
-            >
-              GitHub
-            </a>
-          </div>
         </div>
-
-        <div className="project-item w-full bg-[#1f2937] p-4 rounded-md shadow-md border border-gray-700 hover:shadow-lg transition-shadow duration-300 ease-in-out">
-          <h2 className="text-xl lg:text-2xl font-semibold text-white px-2">
-            Cab-Booking App
-          </h2>
-          <p className="text-sm lg:text-base px-2 mt-1 text-gray-300 leading-snug">
-            The Cab-Booking App features a dual interface for drivers and
-            customers, enabling seamless ride requests and efficient service
-            management for a smooth transportation experience. 🚖
-          </p>
-          <div className="flex space-x-3 px-2 mt-2">
-            <a
-              href="https://github.com/shaikhsiddique/Cab-Booking-App"
-              className="text-blue-400 hover:text-blue-300 text-sm px-2 py-1 rounded-md border border-blue-400 hover:bg-blue-400 hover:bg-opacity-10 transition-all duration-200 ease-in-out"
-            >
-              GitHub
-            </a>
-          </div>
-        </div>
-      </motion.div>
     </div>
   );
 }

@@ -1,50 +1,112 @@
-[
-  {
-    "title": "PassOP",
-    "description": "Password Manager A basic React app for managing passwords,securely stored in local storage with options for adding, viewing, and managing",
-    "github": "https://github.com/shaikhsiddique/PassOP",
-    "liveDemo": "https://pass-op-black.vercel.app/"
-  },
-  {
-    "title": "TaskHub",
-    "description": "TaskHub uses React hooks (`useState`, `useEffect`) with `localStorage` for data persistence, ensuring a seamless user experience, and Tailwind CSS for a sleek, responsive UI.",
-    "github": "https://github.com/shaikhsiddique/ems",
-    "liveDemo": "https://task-hub-inky.vercel.app/"
-  },
-  {
-    "title": "E-commerce React App Frontend",
-    "description": "A responsive frontend for an e-commerce site, showcasing product displays, cart functionality, and smooth navigation. 🛒",
-    "github": "https://github.com/shaikhsiddique/Ecommerce",
-    "liveDemo": "https://react-ecommerce-mu-fawn.vercel.app/"
-  },
-  {
-    "title": "Rejouice Website",
-    "description": "Frontend for the Rejouice website with GSAP animations, created with HTML, CSS, and JavaScript.",
-    "github": "https://github.com/shaikhsiddique/Rejouice-website",
-    "liveDemo": "https://shaikhsiddique.github.io/Rejouice-website/"
-  },
-  {
-    "title": "thirtySixStudio Website",
-    "description": "Frontend for the thirtySixStudio website with Canvas and GSAP animations, created with HTML, CSS, and JavaScript.",
-    "github": "https://github.com/shaikhsiddique/thirtysixstudio",
-   "liveDemo": "https://thirtysixstudio-hu240hsnf-siddique-shaikhs-projects.vercel.app/"
-  },
-  {
-    "title": "MelodyHub",
-    "description": "MelodyHub 🎵 A simple JavaScript music player with curated playlists and predefined songs.",
-    "github": "https://github.com/shaikhsiddique/MelodyHub",
-    "liveDemo": "https://melody-hub-bice.vercel.app/"
-  },
-  {
-    "title": "Stick-Man Game",
-    "description": "A basic stick-man game with simple gameplay, created using HTML, CSS, and JavaScript.",
-    "github": "https://github.com/shaikhsiddique/stick-man-game",
-    "liveDemo": "https://shaikhsiddique.github.io/stick-man-game/"
-  },
-  {
-    "title": "Karmaveer Bhaurao Patil College Website",
-    "description": "Static clone of KBP Polytechnic website with HTML, CSS, and JavaScript.",
-    "github": "https://github.com/shaikhsiddique/KBP-website",
-   "liveDemo": "https://shaikhsiddique.github.io/KBP-website/"
-  }
-]
+{
+  "frontend": [
+    {
+      "title": "PassOP",
+      "description": "Password Manager A basic React app for managing passwords, securely stored in local storage with options for adding, viewing, and managing.",
+      "github": "https://github.com/shaikhsiddique/PassOP",
+      "liveDemo": "https://pass-op-black.vercel.app/"
+    },
+    {
+      "title": "TaskHub",
+      "description": "TaskHub uses React hooks (`useState`, `useEffect`) with `localStorage` for data persistence, ensuring a seamless user experience, and Tailwind CSS for a sleek, responsive UI.",
+      "github": "https://github.com/shaikhsiddique/ems",
+      "liveDemo": "https://task-hub-inky.vercel.app/"
+    },
+    {
+      "title": "E-commerce React App Frontend",
+      "description": "A responsive frontend for an e-commerce site, showcasing product displays, cart functionality, and smooth navigation. 🛒",
+      "github": "https://github.com/shaikhsiddique/Ecommerce",
+      "liveDemo": "https://react-ecommerce-mu-fawn.vercel.app/"
+    },
+    {
+      "title": "Rejouice Website",
+      "description": "Frontend for the Rejouice website with GSAP animations, created with HTML, CSS, and JavaScript.",
+      "github": "https://github.com/shaikhsiddique/Rejouice-website",
+      "liveDemo": "https://shaikhsiddique.github.io/Rejouice-website/"
+    },
+    {
+      "title": "thirtySixStudio Website",
+      "description": "Frontend for the thirtySixStudio website with Canvas and GSAP animations, created with HTML, CSS, and JavaScript.",
+      "github": "https://github.com/shaikhsiddique/thirtysixstudio",
+      "liveDemo": "https://thirtysixstudio-hu240hsnf-siddique-shaikhs-projects.vercel.app/"
+    },
+    {
+      "title": "MelodyHub",
+      "description": "MelodyHub 🎵 A simple JavaScript music player with curated playlists and predefined songs.",
+      "github": "https://github.com/shaikhsiddique/MelodyHub",
+      "liveDemo": "https://melody-hub-bice.vercel.app/"
+    },
+    {
+      "title": "Stick-Man Game",
+      "description": "A basic stick-man game with simple gameplay, created using HTML, CSS, and JavaScript.",
+      "github": "https://github.com/shaikhsiddique/stick-man-game",
+      "liveDemo": "https://shaikhsiddique.github.io/stick-man-game/"
+    },
+    {
+      "title": "Karmaveer Bhaurao Patil College Website",
+      "description": "Static clone of KBP Polytechnic website with HTML, CSS, and JavaScript.",
+      "github": "https://github.com/shaikhsiddique/KBP-website",
+      "liveDemo": "https://shaikhsiddique.github.io/KBP-website/"
+    }
+  ],
+  "fullstack": [
+      {
+        "title": "Scatch",
+        "description": "An eCommerce site for bags using Node.js, MongoDB, EJS, and Tailwind CSS. Features admin product management, image uploads with Multer, and user cart & ordering. 🛍",
+        "github": "https://github.com/shaikhsiddique/Scatch-",
+        "liveDemo": ""
+      },
+      {
+        "title": "ChatStream",
+        "description": "ChatStream is a real-time app combining chat and video calls. With WebRTC for video and Socket.IO for messaging, it offers a smooth platform for both personal and professional interactions.",
+        "github": "https://github.com/shaikhsiddique/ChatStream",
+        "liveDemo": "https://chatstream-zyt9.onrender.com/"
+      },
+      {
+        "title": "DevTube",
+        "description": "DevTube is a developer-centric video platform, similar to YouTube, built using Node.js, Express.js, MongoDB, and Socket.IO, enabling users to share and discover coding tutorials and tech content.",
+        "github": "https://github.com/shaikhsiddique/DevTube",
+        "liveDemo": ""
+      },
+      {
+        "title": "Chess",
+        "description": "Chess is a real-time chess application built with Node.js and Express.js, utilizing server-side rendering for an engaging user experience.",
+        "github": "https://github.com/shaikhsiddique/chess",
+        "liveDemo": "https://chess-2jya.onrender.com"
+      },
+      {
+        "title": "PhotoShare",
+        "description": "PhotoShare: is a social media app inspired by Instagram, built with Node.js and React, enabling users to share photos, follow others, and engage through likes and comments.",
+        "github": "https://github.com/shaikhsiddique/Instagram-Clone",
+        "liveDemo": ""
+      },
+      {
+        "title": "LiveTracker",
+        "description": "LiveTracker: is a real-time tracking application built with Node.js and Socket.IO, allowing users to monitor locations and movements seamlessly, providing instant updates and interactions.",
+        "github": "https://github.com/shaikhsiddique/Realtime-Tracker",
+        "liveDemo": ""
+      }
+   
+  ],
+  "android":[
+    {
+      "title": "VehServicing App",
+      "description": "The VehServicing app, built with Android Studio, offers an intuitive platform for managing vehicle service appointments and accessing service history. 🚗",
+      "github": "https://github.com/shaikhsiddique/VehServicing",
+      "liveDemo": ""
+    },
+    {
+      "title": "RecipeApp",
+      "description": "The RecipeApp allows users to discover and save a variety of delicious recipes added by us, all in an easy-to-navigate interface. 🍽️",
+      "github": "https://github.com/shaikhsiddique/RecipeApp",
+      "liveDemo": ""
+    },
+    {
+      "title": "Cab-Booking App",
+      "description": "The Cab-Booking App features a dual interface for drivers and customers, enabling seamless ride requests and efficient service management for a smooth transportation experience. 🚖",
+      "github": "https://github.com/shaikhsiddique/Cab-Booking-App",
+      "liveDemo": ""
+    }
+  ]
+  
+}

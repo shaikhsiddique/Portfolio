@@ -1,6 +1,8 @@
 import React from "react";
 import Server from "../../components/3rd/Server";
 import { motion } from "framer-motion";
+import Project_Card from "../../components/Project-Card";
+import Project_Data from '../../assets/Project.json';
 
 function Full_Stack_Project() {
   return (
@@ -90,152 +92,22 @@ function Full_Stack_Project() {
         </div>
       </motion.div>
 
-      <motion.div initial={{ opacity: 0 }}
-          animate={{opacity: 1 }}
-          transition={{
-            duration: 0.2,
-            delay: 3,
-          }} className="projects-list absolute top-[170%] w-full px-4 sm:px-8 lg:px-10 py-6 text-[#bad3ef] space-y-4 pb-12">
+      <div className="projects-list absolute top-[170%] w-full px-4 sm:px-8 lg:px-10 py-6 text-[#bad3ef] space-y-4 pb-12">
         <h1 className="text-4xl font-semibold text-black text-center mb-4">
           Explore My Backend Projects
         </h1>
-        <div className="project-item w-full bg-[#1f2937] p-4 rounded-md shadow-md border border-gray-700 hover:shadow-lg transition-shadow duration-300 ease-in-out">
-          <h2 className="text-xl lg:text-2xl font-semibold text-white px-2">
-            Scatch
-          </h2>
-          <p className="text-sm lg:text-base px-2 mt-1 text-gray-300 leading-snug">
-            Scatch: An eCommerce site for bags using Node.js, MongoDB, EJS, and
-            Tailwind CSS. Features admin product management, image uploads with
-            Multer, and user cart & ordering. 🛍
-          </p>
-          <div className="flex space-x-3 px-2 mt-2">
-            <a
-              href="https://github.com/shaikhsiddique/Scatch-"
-              className="text-blue-400 hover:text-blue-300 text-sm px-2 py-1 rounded-md border border-blue-400 hover:bg-blue-400 hover:bg-opacity-10 transition-all duration-200 ease-in-out"
+        <div className="flex flex-wrap justify-evenly gap-4 w-[90%] mx-auto">
+          {Project_Data.fullstack.map((e, index) => (
+            <div
+              key={index}
+              className="w-full sm:w-1/2 md:w-1/3 lg:w-1/4 xl:w-1/4"
             >
-              GitHub
-            </a>
-            <a
-              href=""
-              className="text-green-400 hover:text-green-300 text-sm px-2 py-1 rounded-md border border-green-400 hover:bg-green-400 hover:bg-opacity-10 transition-all duration-200 ease-in-out"
-            >
-              Live Demo
-            </a>
-          </div>
+              <Project_Card index={index} data={e} />
+            </div>
+          ))}
         </div>
-
-        <div className="project-item w-full bg-[#1f2937] p-4 rounded-md shadow-md border border-gray-700 hover:shadow-lg transition-shadow duration-300 ease-in-out">
-          <h2 className="text-xl lg:text-2xl font-semibold text-white px-2">
-            ChatStream
-          </h2>
-          <p className="text-sm lg:text-base px-2 mt-1 text-gray-300 leading-snug">
-            ChatStream is a real-time app combining chat and video calls. With
-            WebRTC for video and Socket.IO for messaging, it offers a smooth
-            platform for both personal and professional interactions
-          </p>
-          <div className="flex space-x-3 px-2 mt-2">
-            <a
-              href="https://github.com/shaikhsiddique/ChatStream"
-              className="text-blue-400 hover:text-blue-300 text-sm px-2 py-1 rounded-md border border-blue-400 hover:bg-blue-400 hover:bg-opacity-10 transition-all duration-200 ease-in-out"
-            >
-              GitHub
-            </a>
-            <a
-              href="https://chatstream-zyt9.onrender.com/"
-              className="text-green-400 hover:text-green-300 text-sm px-2 py-1 rounded-md border border-green-400 hover:bg-green-400 hover:bg-opacity-10 transition-all duration-200 ease-in-out"
-            >
-              Live Demo
-            </a>
-          </div>
-        </div>
-
-        <div className="project-item w-full bg-[#1f2937] p-4 rounded-md shadow-md border border-gray-700 hover:shadow-lg transition-shadow duration-300 ease-in-out">
-          <h2 className="text-xl lg:text-2xl font-semibold text-white px-2">
-            DevTube
-          </h2>
-          <p className="text-sm lg:text-base px-2 mt-1 text-gray-300 leading-snug">
-            DevTube is a developer-centric video platform, similar to YouTube,
-            built using Node.js, Express.js, MongoDB, and Socket.IO, enabling
-            users to share and discover coding tutorials and tech content.
-          </p>
-          <div className="flex space-x-3 px-2 mt-2">
-            <a
-              href="https://github.com/shaikhsiddique/DevTube"
-              className="text-blue-400 hover:text-blue-300 text-sm px-2 py-1 rounded-md border border-blue-400 hover:bg-blue-400 hover:bg-opacity-10 transition-all duration-200 ease-in-out"
-            >
-              GitHub
-            </a>
-            <a
-              href=""
-              className="text-green-400 hover:text-green-300 text-sm px-2 py-1 rounded-md border border-green-400 hover:bg-green-400 hover:bg-opacity-10 transition-all duration-200 ease-in-out"
-            >
-              Live Demo
-            </a>
-          </div>
-        </div>
-
-        <div className="project-item w-full bg-[#1f2937] p-4 rounded-md shadow-md border border-gray-700 hover:shadow-lg transition-shadow duration-300 ease-in-out">
-          <h2 className="text-xl lg:text-2xl font-semibold text-white px-2">
-            Chess
-          </h2>
-          <p className="text-sm lg:text-base px-2 mt-1 text-gray-300 leading-snug">
-            Chess is a real-time chess application built with Node.js and
-            Express.js, utilizing server-side rendering for an engaging user
-            experience.
-          </p>
-          <div className="flex space-x-3 px-2 mt-2">
-            <a
-              href="https://github.com/shaikhsiddique/chess"
-              className="text-blue-400 hover:text-blue-300 text-sm px-2 py-1 rounded-md border border-blue-400 hover:bg-blue-400 hover:bg-opacity-10 transition-all duration-200 ease-in-out"
-            >
-              GitHub
-            </a>
-            <a
-              href="https://chess-2jya.onrender.com"
-              className="text-green-400 hover:text-green-300 text-sm px-2 py-1 rounded-md border border-green-400 hover:bg-green-400 hover:bg-opacity-10 transition-all duration-200 ease-in-out"
-            >
-              Live Demo
-            </a>
-          </div>
-        </div>
-
-        <div className="project-item w-full bg-[#1f2937] p-4 rounded-md shadow-md border border-gray-700 hover:shadow-lg transition-shadow duration-300 ease-in-out">
-          <h2 className="text-xl lg:text-2xl font-semibold text-white px-2">
-            PhotoShare
-          </h2>
-          <p className="text-sm lg:text-base px-2 mt-1 text-gray-300 leading-snug">
-            PhotoShare : is a social media app inspired by Instagram, built with
-            Node.js and React, enabling users to share photos, follow others,
-            and engage through likes and comments.
-          </p>
-          <div className="flex space-x-3 px-2 mt-2">
-            <a
-              href="https://github.com/shaikhsiddique/Instagram-Clone"
-              className="text-blue-400 hover:text-blue-300 text-sm px-2 py-1 rounded-md border border-blue-400 hover:bg-blue-400 hover:bg-opacity-10 transition-all duration-200 ease-in-out"
-            >
-              GitHub
-            </a>
-          </div>
-        </div>
-        <div className="project-item w-full bg-[#1f2937] p-4 rounded-md shadow-md border border-gray-700 hover:shadow-lg transition-shadow duration-300 ease-in-out">
-          <h2 className="text-xl lg:text-2xl font-semibold text-white px-2">
-            LiveTracker
-          </h2>
-          <p className="text-sm lg:text-base px-2 mt-1 text-gray-300 leading-snug">
-            LiveTracker : is a real-time tracking application built with Node.js
-            and Socket.IO, allowing users to monitor locations and movements
-            seamlessly, providing instant updates and interactions.
-          </p>
-          <div className="flex space-x-3 px-2 mt-2">
-            <a
-              href="https://github.com/shaikhsiddique/Realtime-Tracker"
-              className="text-blue-400 hover:text-blue-300 text-sm px-2 py-1 rounded-md border border-blue-400 hover:bg-blue-400 hover:bg-opacity-10 transition-all duration-200 ease-in-out"
-            >
-              GitHub
-            </a>
-          </div>
-        </div>
-      </motion.div>
+        
+      </div>
     </div>
   );
 }

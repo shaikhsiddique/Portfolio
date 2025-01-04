@@ -26,7 +26,7 @@ function Project_Card({ index, data }) {
         </a>
         <a
           href={data.liveDemo}
-          className="text-green-400 hover:text-green-300 text-sm px-3 py-1 rounded-md border border-green-400 hover:bg-green-400 hover:bg-opacity-10 transition-all duration-200 ease-in-out"
+          className={`text-green-400 hover:text-green-300 text-sm px-3 py-1 rounded-md border border-green-400 hover:bg-green-400 hover:bg-opacity-10 transition-all duration-200 ease-in-out ${!data.liveDemo? 'hidden':'' }`}
         >
           Live Demo
         </a>
