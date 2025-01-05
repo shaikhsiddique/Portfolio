@@ -10,22 +10,26 @@ function About() {
       <div className="flex  h-full px-6 md:px-16">
         {/* Content Section */}
         <div className="data md:w-1/2 md:h-56  absolute md:top-80 top-40 md:left-32 left-0 mx-6  bg-black text-[#bad3ef] p-6 rounded-lg shadow-lg space-y-4">
-          <motion.h1 
-          initial={{ opacity: 0,y:-200 }}
-          animate={{ opacity: 1,y:0 }}
-          transition={{
-            duration: 1,
-            delay:1
-          }}
-          className="text-2xl font-bold text-center">About Me</motion.h1>
-          <motion.p
-            initial={{ opacity: 0,y:-200 }}
-            animate={{ opacity: 1,y:0 }}
+          <motion.h1
+            initial={{ opacity: 0, y: -200 }}
+            animate={{ opacity: 1, y: 0 }}
             transition={{
               duration: 1,
-              delay:2
+              delay: 1,
             }}
-            className="text-lg leading-relaxed">
+            className="text-2xl font-bold text-center"
+          >
+            About Me
+          </motion.h1>
+          <motion.p
+            initial={{ opacity: 0, y: -200 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{
+              duration: 1,
+              delay: 2,
+            }}
+            className="text-lg leading-relaxed"
+          >
             Hi! I'm a web developer with a solid foundation in frontend and
             backend development. Currently, I'm completing my diploma in
             Computer Science. I have experience building scalable, user-friendly
@@ -40,25 +44,83 @@ function About() {
         </div>
       </div>
 
-      <div className="about-page absolute top-[97%]  w-full p-6 grid grid-cols-1 md:grid-cols-3 gap-4 justify-center items-start">
+      <div className="about-page absolute top-[97%]  w-full p-6  gap-4 justify-center items-start">
         {/* Skills Section */}
-        <div className="w-full  bg-black text-[#bad3ef] p-6 rounded-lg shadow-lg">
-          <h3 className="text-3xl text-white font-medium mb-4 text-center">
+        <div className="w-full bg-black text-[#bad3ef] p-6 border-b-2 shadow-lg">
+          <h3 className="text-3xl text-white font-medium mb-4 text-center pl-6">
             Skills
           </h3>
-          <ul className="list-disc list-inside space-y-2 text-center">
-            <li>React.js</li>
-            <li>Node.js</li>
-            <li>Express.js</li>
-            <li>MongoDB</li>
-            <li>Tailwind CSS</li>
-            <li>GSAP Animations</li>
-            <li>Git & GitHub</li>
+          <div className="flex flex-wrap justify-center gap-10">
+            <div className="w-full sm:w-1/2 md:w-1/4 xl:w-1/5">
+              <h4 className="text-xl font-medium text-center text-gray-50">
+                Frontend
+              </h4>
+              <ul className="text-center flex items-center justify-center gap-4">
+                <li className="hover:text-gray-200">
+                  • React.js Web-Devlopment
+                </li>
+                <li className="hover:text-gray-200">•Tailwind CSS</li>
+                <li className="hover:text-gray-200">• GSAP Animations</li>
+              </ul>
+            </div>
+            <div className="w-full sm:w-1/2 md:w-1/4 xl:w-1/5">
+              <h4 className="text-xl font-medium text-center text-gray-50">
+                Backend
+              </h4>
+              <ul className="text-center flex items-center justify-center gap-4">
+                <li className="hover:text-gray-200">• Node.js</li>
+                <li className="hover:text-gray-200">• Express.js</li>
+              </ul>
+            </div>
+            <div className="w-full sm:w-1/2 md:w-1/4 xl:w-1/5">
+              <h4 className="text-xl font-medium text-center text-gray-50">
+                Database
+              </h4>
+              <ul className="text-center flex items-center justify-center gap-4 pl-2">
+                <li className="hover:text-gray-200">• MongoDB</li>
+              </ul>
+            </div>
+            <div className="w-full sm:w-1/2 md:w-1/4 xl:w-1/5">
+              <h4 className="text-xl font-medium text-center text-gray-50">
+                Version Control
+              </h4>
+              <ul className="text-center flex items-center justify-center gap-4 pl-7">
+                <li className="hover:text-gray-200">• Git & GitHub</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div className="w-full bg-black text-[#bad3ef] p-6 border-b-2 shadow-lg">
+          <h3 className="text-3xl text-white font-medium mb-4 text-center">
+            Languages
+          </h3>
+          <ul className="text-center flex flex-wrap justify-center gap-6">
+            <li className="hover:text-gray-200 flex items-center gap-2">
+              <span>•</span> JavaScript
+            </li>
+            <li className="hover:text-gray-200 flex items-center gap-2">
+              <span>•</span> HTML
+            </li>
+            <li className="hover:text-gray-200 flex items-center gap-2">
+              <span>•</span> CSS
+            </li>
+            <li className="hover:text-gray-200 flex items-center gap-2">
+              <span>•</span> Python
+            </li>
+            <li className="hover:text-gray-200 flex items-center gap-2">
+              <span>•</span> Java
+            </li>
+            <li className="hover:text-gray-200 flex items-center gap-2">
+              <span>•</span> C++
+            </li>
+            <li className="hover:text-gray-200 flex items-center gap-2">
+              <span>•</span> C
+            </li>
           </ul>
         </div>
 
         {/* Internship Section */}
-        <div className="w-full bg-black text-[#bad3ef] p-6 rounded-lg shadow-lg mt-16">
+        <div className="w-full bg-black text-[#bad3ef] p-6 border-b-2 shadow-lg ">
           <h3 className="text-3xl text-white font-medium mb-4 text-center">
             Industrial Training
           </h3>
@@ -72,23 +134,8 @@ function About() {
             track request statuses.
           </p>
         </div>
-
-        <div className="w-full bg-black text-[#bad3ef] p-6 rounded-lg shadow-lg">
-          <h3 className="text-3xl text-white font-medium mb-4 text-center">
-            Languages
-          </h3>
-          <ul className="list-disc list-inside space-y-2 text-center">
-            <li>JavaScript</li>
-            <li>HTML</li>
-            <li>CSS</li>
-            <li>Python</li>
-            <li>Java</li>
-            <li>C++</li>
-            <li>C</li>
-          </ul>
-        </div>
       </div>
-      <div className="hero3 absolute sm:top-[155%] top-[260%] w-full flex flex-col items-center justify-center gap-5 py-10">
+      <div className="hero3 absolute sm:top-[170%] top-[280%] w-full flex flex-col items-center justify-center gap-5 py-10">
         {/* Education Section */}
         <div className="w-[96vw] bg-black text-[#bad3ef] p-6 rounded-lg shadow-lg md:col-span-2">
           <h3 className="text-3xl text-white font-medium mb-4 text-center">
@@ -114,15 +161,17 @@ function About() {
           </p>
         </div>
         <div className="resume  w-[96vw] bg-black text-[#bad3ef] p-6 rounded-lg shadow-lg text-center">
-        <a href="/SiddiqueShaikh-resume.pdf" download="" className="text-[#bad3ef]">
-          <button className="py-2 px-4 bg-[#bad3ef] text-black rounded-lg">
-            Download Resume
-          </button>
-        </a>
+          <a
+            href="/SiddiqueShaikh-resume.pdf"
+            download=""
+            className="text-[#bad3ef]"
+          >
+            <button className="py-2 px-4 bg-[#bad3ef] text-black rounded-lg">
+              Download Resume
+            </button>
+          </a>
+        </div>
       </div>
-      </div>
-
-      
     </div>
   );
 }

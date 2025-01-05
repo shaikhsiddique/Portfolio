@@ -10,7 +10,7 @@ function Project_Card({ index, data,project }) {
       <img
         src={`./images/${project}/p${index + 1}.png`}
         alt={data.title}
-        className={`  rounded-md mb-4 hover:scale-110 transition-transform duration-300 ease-in-out`}
+        className={` rounded-md mb-4 hover:scale-110 transition-transform duration-300 ease-in-out`}
       />
 
       <p className="text-sm lg:text-base px-2 text-gray-200 text-center hover:text-gray-100">
