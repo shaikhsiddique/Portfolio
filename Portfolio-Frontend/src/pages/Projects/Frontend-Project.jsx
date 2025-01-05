@@ -104,7 +104,7 @@ function Frontend_Project() {
               key={index}
               className="w-full sm:w-1/2 md:w-1/3 lg:w-1/4 xl:w-1/4"
             >
-              <Project_Card index={index} data={e} />
+              <Project_Card index={index} data={e} project="frontend" />
             </div>
           ))}
         </div>

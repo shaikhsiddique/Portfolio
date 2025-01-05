@@ -22,7 +22,7 @@
       "title": "Rejouice Website",
       "description": "Frontend for the Rejouice website with GSAP animations, created with HTML, CSS, and JavaScript.",
       "github": "https://github.com/shaikhsiddique/Rejouice-website",
-      "liveDemo": "https://shaikhsiddique.github.io/Rejouice-website/"
+      "liveDemo": "https://rejouice-website-mocha.vercel.app/"
     },
     {
       "title": "thirtySixStudio Website",

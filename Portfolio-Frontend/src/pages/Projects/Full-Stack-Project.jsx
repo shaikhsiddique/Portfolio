@@ -93,7 +93,7 @@ function Full_Stack_Project() {
       </motion.div>
 
       <div className="projects-list absolute top-[170%] w-full px-4 sm:px-8 lg:px-10 py-6 text-[#bad3ef] space-y-4 pb-12">
-        <h1 className="text-4xl font-semibold text-black text-center mb-4">
+        <h1 className="text-4xl font-semibold text-black text-center mb-32">
           Explore My Backend Projects
         </h1>
         <div className="flex flex-wrap justify-evenly gap-4 w-[90%] mx-auto">
@@ -102,7 +102,7 @@ function Full_Stack_Project() {
               key={index}
               className="w-full sm:w-1/2 md:w-1/3 lg:w-1/4 xl:w-1/4"
             >
-              <Project_Card index={index} data={e} />
+              <Project_Card index={index} data={e} project="fullstack" />
             </div>
           ))}
         </div>
