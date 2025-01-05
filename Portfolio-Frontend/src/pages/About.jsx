@@ -2,6 +2,7 @@ import React from "react";
 import Navbar from "../components/Navbar";
 import { motion } from "framer-motion";
 import Boy from "../components/3rd/Boy";
+import Certificate from "../components/Certificate";
 
 function About() {
   return (
@@ -147,6 +148,11 @@ function About() {
             KBP Polytechnic, Satara <br />
             Focused on software development and web technologies.
           </p>
+        </div>
+
+        {/* Certificate Section */}
+        <div className="w-[96vw]  text-[#bad3ef] p-6 rounded-lg  md:col-span-2">
+          <Certificate/>
         </div>
 
         {/* Future Goals Section */}
