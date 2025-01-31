@@ -168,8 +168,8 @@ function About() {
         </div>
         <div className="resume  w-[96vw] bg-black text-[#bad3ef] p-6 rounded-lg shadow-lg text-center">
           <a
-            href="/SiddiqueShaikh-resume.pdf"
-            download=""
+            href="/resume.pdf"
+            download="/resume.pdf"
             className="text-[#bad3ef]"
           >
             <button className="py-2 px-4 bg-[#bad3ef] text-black rounded-lg">
