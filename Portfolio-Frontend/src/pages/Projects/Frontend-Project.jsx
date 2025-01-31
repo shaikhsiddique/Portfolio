@@ -4,6 +4,7 @@ import Project_Data from "../../assets/Project.json";
 import { motion } from "framer-motion";
 import Project_Card from "../../components/Project-Card";
 
+
 function Frontend_Project() {
   return (
     <div className="w-full h-screen flex items-center justify-center relative overflow-x-hidden">

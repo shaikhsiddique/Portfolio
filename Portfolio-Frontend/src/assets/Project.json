@@ -31,6 +31,12 @@
       "liveDemo": "https://thirtysixstudio-hu240hsnf-siddique-shaikhs-projects.vercel.app/"
     },
     {
+      "title": "Life of Busker Website",
+      "description": "Frontend for the Life of Busker website with GSAP animations, created with HTML, CSS, and JavaScript.",
+      "github": "https://github.com/shaikhsiddique/Life-of-Busker",
+      "liveDemo": "https://life-of-busker.vercel.app/"
+    },
+    {
       "title": "MelodyHub",
       "description": "MelodyHub 🎵 A simple JavaScript music player with curated playlists and predefined songs.",
       "github": "https://github.com/shaikhsiddique/MelodyHub",
