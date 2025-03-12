@@ -1,6 +1,7 @@
 import React from "react";
 
 function Project_Card({ index, data,project }) {
+  console.log(index,data,project);
   return (
     <div className="project-item w-[100%] h-[60vh] bg-[#3b3d3f] p-6 rounded-lg shadow-md border border-gray-700 hover:shadow-lg transition-shadow duration-300 ease-in-out flex flex-col justify-between">
       <h2 className="text-xl lg:text-2xl font-semibold text-white text-center py-2">
