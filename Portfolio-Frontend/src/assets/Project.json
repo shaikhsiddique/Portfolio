@@ -53,7 +53,14 @@
       "description": "Static clone of KBP Polytechnic website with HTML, CSS, and JavaScript.",
       "github": "https://github.com/shaikhsiddique/KBP-website",
       "liveDemo": "https://shaikhsiddique.github.io/KBP-website/"
+    },
+    {
+      "title": "GitHub Repository Explorer",
+      "description": "Explore and analyze GitHub repositories with real-time search, commit graphs, and dark mode support.",
+      "github": "https://github.com/shaikhsiddique/repo-finder",
+      "liveDemo": "https://elegant-blini-81680b.netlify.app/"
     }
+    
   ],
   "fullstack": [
     {
