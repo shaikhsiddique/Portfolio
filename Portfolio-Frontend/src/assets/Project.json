@@ -59,7 +59,14 @@
       "description": "Explore and analyze GitHub repositories with real-time search, commit graphs, and dark mode support.",
       "github": "https://github.com/shaikhsiddique/repo-finder",
       "liveDemo": "https://elegant-blini-81680b.netlify.app/"
+    },
+    {
+      "title": "AI Image Enhancer",
+      "description": "A React-based web app to enhance images using AI APIs. Features include drag-and-drop upload, real-time enhancement, polling, and clear before/after previews.",
+      "github": "https://github.com/shaikhsiddique/Ai-Image-Enhance",
+      "liveDemo": "https://darling-pixie-47dc79.netlify.app/"
     }
+    
     
   ],
   "fullstack": [
