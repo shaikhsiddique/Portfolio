@@ -65,7 +65,13 @@
       "description": "A React-based web app to enhance images using AI APIs. Features include drag-and-drop upload, real-time enhancement, polling, and clear before/after previews.",
       "github": "https://github.com/shaikhsiddique/Ai-Image-Enhance",
       "liveDemo": "https://darling-pixie-47dc79.netlify.app/"
+    },
+    {
+      "title": "AI Assistant",
+      "description": "AI-powered chat app built with React and @mlc-ai/web-llm using the Llama-3.1-8B-Instruct model.",
+      "github": "https://github.com/shaikhsiddique/AI-Assistant-WEBLLM"
     }
+    
     
     
   ],
