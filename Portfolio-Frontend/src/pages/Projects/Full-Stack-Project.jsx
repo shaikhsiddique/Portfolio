@@ -3,6 +3,7 @@ import Server from "../../components/3rd/Server";
 import { motion } from "framer-motion";
 import Project_Card from "../../components/Project-Card";
 import Project_Data from '../../assets/Project.json';
+import Animated_Project_Card from "../../components/Animated-Project-Card";
 
 function Full_Stack_Project() {
   return (
@@ -98,6 +99,12 @@ function Full_Stack_Project() {
         </h1>
         <div className="flex flex-wrap justify-evenly gap-4 w-[90%] mx-auto">
           {Project_Data.fullstack.map((e, index) => (
+            index < 3 ? <><div
+            key={index}
+            className="w-full sm:w-1/2 md:w-1/3 lg:w-1/4 xl:w-1/4"
+          >
+            <Animated_Project_Card index={index} data={e} project="fullstack" />
+          </div> </> :
             <div
               key={index}
               className="w-full sm:w-1/2 md:w-1/3 lg:w-1/4 xl:w-1/4"

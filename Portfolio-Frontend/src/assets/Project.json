@@ -104,7 +104,7 @@
       },
       {
         "title": "DevTube",
-        "description": "DevTube is a developer-centric video platform, similar to YouTube, built using Node.js, Express.js, MongoDB, and Socket.IO, enabling users to share and discover coding tutorials and tech content.",
+        "description": "DevTube is a developer-centric video platform, similar to YouTube, built using Node.js, Express.js, MongoDB, and Socket.IO, enabling users to share and discover videos",
         "github": "https://github.com/shaikhsiddique/DevTube",
         "liveDemo": ""
       },

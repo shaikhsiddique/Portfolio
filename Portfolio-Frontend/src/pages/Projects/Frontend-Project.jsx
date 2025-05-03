@@ -2,7 +2,7 @@ import React from "react";
 import Laptop from "../../components/3rd/Laptop";
 import Project_Data from "../../assets/Project.json";
 import { motion } from "framer-motion";
-import Frontend_Project_Card from "../../components/Frontend-Project-Card";
+import Animated_Project_Card from "../../components/Animated-Project-Card";
 
 
 function Frontend_Project() {
@@ -105,7 +105,7 @@ function Frontend_Project() {
               key={index}
               className="w-full sm:w-1/2 md:w-1/3 lg:w-1/4 xl:w-1/4"
             >
-              <Frontend_Project_Card index={index} data={e} project="frontend" />
+              <Animated_Project_Card index={index} data={e} project="frontend" />
             </div>
           ))}
         </div>
