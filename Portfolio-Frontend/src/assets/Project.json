@@ -36,6 +36,7 @@
       "github": "https://github.com/shaikhsiddique/Life-of-Busker",
       "liveDemo": "https://life-of-busker.vercel.app/"
     },
+    { "title": "Minecraft Clone", "description": "Minecraft-style voxel game in the browser with infinite terrain, mining, and save/load, built using Three.js.", "github": "https://github.com/shaikhsiddique/Minecraft", "liveDemo": "https://minecraft-nine-pi.vercel.app/" },
     {
       "title": "MelodyHub",
       "description": "MelodyHub 🎵 A simple JavaScript music player with curated playlists and predefined songs.",
