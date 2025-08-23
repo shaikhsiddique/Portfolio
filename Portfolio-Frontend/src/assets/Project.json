@@ -1,6 +1,11 @@
 {
   "frontend": [
     {
+      "title": "Meraaj Palace Restaurant",
+      "description": "Restaurant website with online booking, responsive design, and smooth animations.",
+      "liveDemo": "https://www.meraajpalacerestaurant.com/"
+    },    
+    {
       "title": "PassOP",
       "description": "Password Manager A basic React app for managing passwords, securely stored in local storage with options for adding, viewing, and managing.",
       "github": "https://github.com/shaikhsiddique/PassOP",

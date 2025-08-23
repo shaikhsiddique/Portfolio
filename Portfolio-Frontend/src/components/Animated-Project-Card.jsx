@@ -74,14 +74,14 @@ function Animated_Project_Card({ index, data, project }) {
         {data.description}
       </p>
       <div className="flex items-center justify-center space-x-4 mt-auto z-10">
-        <a
+        {data.github && (<a
           href={data.github}
           target="_blank"
           rel="noopener noreferrer"
           className="text-blue-400 hover:text-blue-300 text-sm px-3 py-1 rounded-md border border-blue-400 hover:bg-blue-400 hover:bg-opacity-10 transition-all duration-200 ease-in-out"
         >
           GitHub
-        </a>
+        </a>)}
         {data.liveDemo && (
           <a
             href={data.liveDemo}
