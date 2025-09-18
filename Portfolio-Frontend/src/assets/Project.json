@@ -6,10 +6,9 @@
       "liveDemo": "https://www.meraajpalacerestaurant.com/"
     },    
     {
-      "title": "PassOP",
-      "description": "Password Manager A basic React app for managing passwords, securely stored in local storage with options for adding, viewing, and managing.",
-      "github": "https://github.com/shaikhsiddique/PassOP",
-      "liveDemo": "https://pass-op-black.vercel.app/"
+      "title": "Swad Chinese Restaurant",
+      "description": "Responsive and interactive restaurant website built with React, Vite, Tailwind CSS, and GSAP animations for an engaging user experience.",
+      "liveDemo": "https://swadchineseresturant.vercel.app/"
     },
     {
       "title": "TaskHub",
