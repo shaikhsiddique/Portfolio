@@ -11,10 +11,9 @@
       "liveDemo": "https://swadchineseresturant.vercel.app/"
     },
     {
-      "title": "TaskHub",
-      "description": "TaskHub uses React hooks (`useState`, `useEffect`) with `localStorage` for data persistence, ensuring a seamless user experience, and Tailwind CSS for a sleek, responsive UI.",
-      "github": "https://github.com/shaikhsiddique/ems",
-      "liveDemo": "https://task-hub-inky.vercel.app/"
+      "title": "South Aroma Cafe",
+      "description": "Designed & developed official website for South Aroma Cafe (South Indian restaurant) with authentic branding, performance & UX.",
+      "liveDemo": "https://www.southaroma.in/"
     },
     {
       "title": "E-commerce React App Frontend",
